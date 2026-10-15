@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Space Login — Educational Demo</title>
+
+  <!-- Connect the CSS file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Connect the JavaScript file -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="logo">
+  </div>
+
+  <main class="login-card">
+    <section class="login-section">
+      <h1>Welcome back!</h1>
+      <p class="subtitle">We're so excited to see you again.</p>
+
+      <form id="demo-form">
+        <label for="username">Email or username</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Demo username"
+          autocomplete="off"
+        >
+
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Demo password"
+          autocomplete="off"
+        >
+
+        <a href="#demo-info" class="forgot">
+          Forgot your password?
+        </a>
+
+        <button type="submit">Preview login</button>
+
+        <p class="register">
+          Need an account? <a href="#demo-info">Register</a>
+        </p>
+      </form>
+    </section>
+
+    <aside class="qr-section">
+      <div class="qr-placeholder" aria-label="QR code placeholder">
+        QR
+      </div>
+
+      <h2>QR Code Demo</h2>
+      <p>
+        This area represents a QR login panel.
+        It does not authenticate an account.
+      </p>
+    </aside>
+
+    <p id="demo-info" class="demo-notice" role="status">
+      Educational demo. No credentials are stored or transmitted.
+    </p>
+  </main>
+
+</body>
+</html>

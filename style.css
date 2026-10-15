@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f2f3f5;
+
+  background:url(background.svg) 100% no-repeat;
+}
+
+/* Educational demo label */
+.logo {
+  background:url(logo.svg) 100% no-repeat;
+  position: fixed;
+  top: 14px;
+  left: 16px;
+
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+/* Main login panel */
+.login-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 26px;
+
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 24px;
+
+  background: #232428;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.login-section h1 {
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 23px;
+}
+
+.subtitle {
+  margin: 0 0 24px;
+  text-align: center;
+  color: #b5bac1;
+  font-size: 13px;
+}
+
+label {
+  display: block;
+  margin: 16px 0 7px;
+
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #dbdee1;
+}
+
+input {
+  width: 100%;
+  padding: 11px;
+
+  color: #ffffff;
+  background: #191a1d;
+
+  border: 1px solid #141519;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #5865f2;
+}
+
+.forgot,
+.register a {
+  color: #8ea1ff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.forgot {
+  display: inline-block;
+  margin-top: 9px;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 4px;
+
+  background: #5865f2;
+  color: white;
+
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4752c4;
+}
+
+.register {
+  font-size: 12px;
+  color: #b5bac1;
+}
+
+/* QR demonstration panel */
+.qr-section {
+  text-align: center;
+  align-self: center;
+}
+
+.qr-placeholder {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+  color: #252525;
+  border: 5px solid white;
+
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.qr-section h2 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.qr-section p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #b5bac1;
+}
+
+/* Demo notice */
+.demo-notice {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 10px;
+
+  border-radius: 4px;
+  background: #34363c;
+  color: #f0c66e;
+
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Mobile layout */
+@media (max-width: 540px) {
+  .login-card {
+    max-width: 380px;
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .qr-section {
+    border-top: 1px solid #41434a;
+    padding-top: 20px;
+  }
+
+  .qr-placeholder {
+    width: 90px;
+    height: 90px;
+  }
+}
