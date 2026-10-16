@@ -14,3 +14,23 @@ document.getElementById("passkey").addEventListener("click", async () => {
     console.log("Passkey dialog closed:", error.name);
   }
 });
+
+/* import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
+Swal.fire({
+  title: 'Error!',
+  text: 'Do you want to continue',
+  icon: 'error',
+  confirmButtonText: 'Cool'
+}) */
+
+
+const qrContainer = document.getElementById("qrcode");
+new QRCode(qrContainer, {
+    text: "https://www.example.com",
+    width: 200,
+    height: 200,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+});
