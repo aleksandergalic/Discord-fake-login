@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- Connect the JavaScript file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="script.js" defer></script>
 </head>
 
@@ -44,12 +45,15 @@
     </section>
 
     <aside class="qr-section">
-      <div id="qrcode"></div>
+      <div class="qr-wrapper">
+        <div id="qrcode"></div>
+        <img class="qr-logo" src="qr_code_middle.png" alt="Discord logo">
+      </div>
       <h2>Log in with QR Code</h2>
       <p>
         Scan this with the <b>Discord mobile
           app to log in instantly.</b><br>
-        Or sign in with a passkey
+        <a href="#" id="passkey">Or sign in with a passkey</a>
       </p>
     </aside>
 

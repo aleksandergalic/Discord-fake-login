@@ -141,12 +141,33 @@ button:hover {
   align-self: center;
 }
 
+.qr-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
 #qrcode {
-    display: inline-block;
-    padding: 90px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+  display: inline-block;
+  padding: 8px;
+  background: white;
+  border-radius: 8px;
+}
+
+#qrcode img,
+#qrcode canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+.qr-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  pointer-events: none;
 }
 
 .qr-section h2 {
@@ -158,6 +179,19 @@ button:hover {
   font-size: 11px;
   line-height: 1.5;
   color: #b5bac1;
+}
+
+#passkey {
+  color: #8ea1ff;
+  text-decoration: none;
+  font-size: 11px;
+  display: inline-block;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+#passkey:hover {
+  text-decoration: underline;
 }
 
 /* Demo notice */
