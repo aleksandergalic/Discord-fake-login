@@ -24,7 +24,12 @@ body {
   font-family: "Discord-font";
   color: #f2f3f5;
 
-  background:url(background.svg) 100% no-repeat;
+  background-color: #18004d;
+  background-image: url("background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Educational demo label */
